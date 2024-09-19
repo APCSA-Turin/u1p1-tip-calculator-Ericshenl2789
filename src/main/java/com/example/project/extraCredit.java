@@ -1,10 +1,12 @@
 package com.example.project;
+import java.util.Scanner;
 
-public class TipCalculator {
+public class extraCredit {
     //WRITE YOUR PROGRAM IN calculateTip
     public static String calculateTip(int people, int percent, double cost) { //You must use these  variable in your calculations
         //DO NOT DELETE ANY OF THE CODE BELOW      
         StringBuilder result = new StringBuilder();
+        Scanner scan = new Scanner(System.in);
         
         double tip = Math.round(cost * percent + 0.5) / 100.0; //learned from https://stackoverflow.com/questions/11701399/round-up-to-2-decimal-places-in-java
         double totalBill = cost + tip;
